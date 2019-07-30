@@ -1,1 +1,37 @@
 
+>> React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
+
+>> A component takes in parameters, called props (short for “properties”), and returns a hierarchy of views to display via the render method.
+
+>> The render method returns a description of what you want to see on the screen. React takes the description and displays the result.
+
+>>  prop called 'value'  ----------->    show that value by {this.props.value}
+
+>> The simplest way to define a component is to write a JavaScript function:
+
+			1)	function Welcome(props) {
+  					return <h1>Hello, {props.name}</h1>;
+				}
+
+				const element = <Welcome name="Sara" />;  //Rendering a component 
+
+
+			2)	class Welcome extends React.Component {
+  					render() {
+    					return <h1>Hello, {this.props.name}</h1>;
+  					}
+				}
+
+  >>  The above two components are equivalent from React’s point of view.
+
+  >> Note: Always start component names with a capital letter.React treats components starting with lowercase letters as DOM tags. For example, <div />
+  >> All React components must act like pure functions with respect to their props.
+
+
+
+
+
+
+
+
+
