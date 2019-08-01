@@ -20,7 +20,7 @@ function objComp(person1,person2){
         }
     }
 }
-
+                
 objComp(person1,person2);
 
 if(checkEq){
