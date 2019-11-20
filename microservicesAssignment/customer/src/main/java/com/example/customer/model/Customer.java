@@ -13,6 +13,15 @@ public class Customer {
 	private long phoneNumber;
 	private Address address;
 
+	public Customer(String cid, String cname, String email, long phoneNumber, Address address) {
+		super();
+		this.cid = cid;
+		this.cname = cname;
+		this.email = email;
+		this.phoneNumber = phoneNumber;
+		this.address = address;
+	}
+
 	public String getCid() {
 		return cid;
 	}
@@ -52,5 +61,12 @@ public class Customer {
 	public void setAddress(Address address) {
 		this.address = address;
 	}
+
+	@Override
+	public String toString() {
+		return "Customer [cid=" + cid + ", cname=" + cname + ", email=" + email + ", phoneNumber=" + phoneNumber
+				+ ", address=" + address + "]";
+	}
+	
 
 }

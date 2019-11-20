@@ -4,7 +4,7 @@ public class OrderLineItems {
 
 	private String productId;
 	private int qty;
-	private double price;
+	private double unitPrice;
 
 	public String getProductId() {
 		return productId;
@@ -23,11 +23,11 @@ public class OrderLineItems {
 	}
 
 	public double getPrice() {
-		return price;
+		return unitPrice;
 	}
 
 	public void setPrice(double price) {
-		this.price = price;
+		this.unitPrice = price;
 	}
 
 }

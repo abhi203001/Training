@@ -9,6 +9,15 @@ public class OrderGet {
 
 	private Customer customer;
 	private ArrayList<Product> orderLineItems;
+	private double totalPrice;
+
+	public double getTotalPrice() {
+		return totalPrice;
+	}
+
+	public void setTotalPrice(double totalPrice) {
+		this.totalPrice = totalPrice;
+	}
 
 	public Customer getCustomer() {
 		return customer;
@@ -26,13 +35,6 @@ public class OrderGet {
 		this.orderLineItems = orderLineItems;
 	}
 
-	@Override
-	public String toString() {
-		return "OrderGet [customer=" + customer + ", orderLineItems=" + orderLineItems + ", getCustomer()="
-				+ getCustomer() + ", getOrderLineItems()=" + getOrderLineItems() + ", getClass()=" + getClass()
-				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
-	}
-
 	public OrderGet(Customer customer, ArrayList<Product> orderLineItems) {
 		super();
 		this.customer = customer;
@@ -41,6 +43,14 @@ public class OrderGet {
 
 	public OrderGet() {
 		super();
+	}
+
+	@Override
+	public String toString() {
+		return "OrderGet [customer=" + customer + ", orderLineItems=" + orderLineItems + ", totalPrice=" + totalPrice
+				+ ", getTotalPrice()=" + getTotalPrice() + ", getCustomer()=" + getCustomer() + ", getOrderLineItems()="
+				+ getOrderLineItems() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
+				+ super.toString() + "]";
 	}
 
 }

@@ -10,6 +10,18 @@ public class Address {
 	private String country;
 	private int pinCode;
 
+	public Address(String buildingNumber, String street1, String street2, String city, String state, String country,
+			int pinCode) {
+		super();
+		this.buildingNumber = buildingNumber;
+		this.street1 = street1;
+		this.street2 = street2;
+		this.city = city;
+		this.state = state;
+		this.country = country;
+		this.pinCode = pinCode;
+	}
+
 	public String getBuildingNumber() {
 		return buildingNumber;
 	}

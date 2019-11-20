@@ -1,18 +1,19 @@
 package com.example.order.model;
 
 import java.util.ArrayList;
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection="torders")
+@Document(collection = "torders")
 public class Order {
 
 	@Id
 	private String orderId;
-	
+
 	private String cid;
+
 	private String date;
+
 	ArrayList<OrderLineItems> orderLineItems;
 
 	public String getOrderId() {
@@ -31,8 +32,6 @@ public class Order {
 		this.date = date;
 	}
 
-	
-	
 	public String getCid() {
 		return cid;
 	}

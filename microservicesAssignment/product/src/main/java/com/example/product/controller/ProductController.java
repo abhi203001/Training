@@ -16,7 +16,7 @@ import com.example.product.model.Product;
 import com.example.product.service.ProductService;
 
 @RestController
-@RequestMapping("api.triconinfotech.com/v1")
+@RequestMapping("/v1")
 public class ProductController {
 	
 	private static final Logger logger = Logger.getLogger(ProductController.class);

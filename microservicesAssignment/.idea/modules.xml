@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/customer/.mvn/.mvn.iml" filepath="$PROJECT_DIR$/customer/.mvn/.mvn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order/.mvn/.mvn1.iml" filepath="$PROJECT_DIR$/order/.mvn/.mvn1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-test/.mvn/.mvn2.iml" filepath="$PROJECT_DIR$/eureka-test/.mvn/.mvn2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product/.mvn/.mvn3.iml" filepath="$PROJECT_DIR$/product/.mvn/.mvn3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product/src/main/main.iml" filepath="$PROJECT_DIR$/product/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order/src/main/main1.iml" filepath="$PROJECT_DIR$/order/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-test/src/main/main2.iml" filepath="$PROJECT_DIR$/eureka-test/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer/src/main/main3.iml" filepath="$PROJECT_DIR$/customer/src/main/main3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product/src/test/test.iml" filepath="$PROJECT_DIR$/product/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer/src/test/test1.iml" filepath="$PROJECT_DIR$/customer/src/test/test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-test/src/test/test2.iml" filepath="$PROJECT_DIR$/eureka-test/src/test/test2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order/src/test/test3.iml" filepath="$PROJECT_DIR$/order/src/test/test3.iml" />
+    </modules>
+  </component>
+</project>

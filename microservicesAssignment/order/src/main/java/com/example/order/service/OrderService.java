@@ -29,29 +29,30 @@ public class OrderService {
 	@Transactional
 	public String createOrder(Order order) {
 		or.save(order);
-		return ("Order create with ID: " + order.getCid());
+		return ("Order created with ID: " + order.getCid());
 	}
 
 	@Transactional(readOnly = true)
 	public OrderGet getOrderById(String id) {
-		System.out.println(id);
+//		double[] totalPrice = {0};
 		String customerId = or.findById(id).get().getCid();
-		System.out.println("Customer ID: " + customerId);
-		Customer customer = restTemplate.getForObject("http://Customer/v1/customer/"+customerId , Customer.class);
+		Customer customer = restTemplate.getForObject("http://Customer/v1/customer/" + customerId, Customer.class);
 		orderGet.setCustomer(customer);
+
 		ArrayList<OrderLineItems> orderLineItems = or.findById(id).get().getOrderLineItems();
 		ArrayList<String> productId = new ArrayList<>();
 		orderLineItems.forEach(item -> {
 			productId.add(item.getProductId());
+//			totalPrice[0]+=item.getPrice();
 		});
 
 		ArrayList<Product> product = new ArrayList<>();
-		productId.forEach(id1 -> {
-			System.out.println("productId is :-->" + id1);
-			product.add(restTemplate.getForObject("http://Product/api.triconinfotech.com/v1/getProductById?id=" + id1,
+		productId.forEach(pid -> {
+			product.add(restTemplate.getForObject("http://Product/v1/getProductById?id=" + pid,
 					Product.class));
 		});
 		orderGet.setOrderLineItems(product);
+//		orderGet.setTotalPrice(totalPrice[0]);
 		return orderGet;
 
 	}
